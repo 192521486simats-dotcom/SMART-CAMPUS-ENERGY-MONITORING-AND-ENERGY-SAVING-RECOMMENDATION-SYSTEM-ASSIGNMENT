@@ -67,5 +67,4 @@ The project supports:
 * SDG 13 – Climate Action
 
 ## Authors
-
-Add the team member names and registration numbers here.
+Tharun Sai Gangadhar P ( 192521486 )
