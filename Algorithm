@@ -1,0 +1,131 @@
+## Overall System Algorithm
+
+### Algorithm: Smart Campus Energy Monitoring System
+
+**Step 1:** Start the program.
+
+**Step 2:** Display the main menu.
+
+**Step 3:** Accept the number of campus facilities.
+
+**Step 4:** For each facility:
+
+* Read facility name.
+* Read permitted energy limit.
+* Read electricity consumption for seven days.
+
+**Step 5:** Calculate the total consumption using a recursive function.
+
+**Step 6:** Calculate average daily consumption.
+
+**Step 7:** Identify the highest consumption day.
+
+**Step 8:** Identify the lowest consumption day.
+
+**Step 9:** Compare total consumption with the permitted limit.
+
+**Step 10:** Classify the facility as NORMAL, HIGH, or EXCESSIVE.
+
+**Step 11:** Detect abnormal consumption patterns.
+
+**Step 12:** Calculate potential energy savings using the specified reduction target.
+
+**Step 13:** Calculate the sustainability score.
+
+**Step 14:** Generate an energy-saving recommendation.
+
+**Step 15:** Allow the user to search for a facility.
+
+**Step 16:** Allow the user to sort facilities according to total energy consumption.
+
+**Step 17:** Merge facility records when required.
+
+**Step 18:** Save the records and sustainability report to a file.
+
+**Step 19:** Allow previously stored records to be retrieved.
+
+**Step 20:** Display the sustainability report.
+
+**Step 21:** Exit the program.
+
+**Step 22:** Stop.
+
+## Algorithm: Recursive Energy Calculation
+
+**Input:** Seven daily energy consumption values.
+
+**Step 1:** If the current day index reaches 7, return 0.
+
+**Step 2:** Add the current day's energy consumption.
+
+**Step 3:** Recursively calculate the remaining days.
+
+**Step 4:** Return the total.
+
+**Formula:**
+
+Total = Day1 + Day2 + Day3 + Day4 + Day5 + Day6 + Day7
+
+## Algorithm: Facility Searching
+
+**Input:** Facility name to search.
+
+**Step 1:** Read the name entered by the user.
+
+**Step 2:** Traverse the facility array.
+
+**Step 3:** Compare the entered name with each facility name using string comparison.
+
+**Step 4:** If a match is found, display the facility details.
+
+**Step 5:** If no match is found after checking all facilities, display "Facility not found."
+
+**Output:** Matching facility information.
+
+## Algorithm: Merge Facility Records
+
+**Input:** Two facility arrays.
+
+**Step 1:** Read the number of facilities in the first dataset.
+
+**Step 2:** Read the number of facilities in the second dataset.
+
+**Step 3:** Copy all records from the first dataset into the merged array.
+
+**Step 4:** Append all records from the second dataset.
+
+**Step 5:** Check whether duplicate facility names exist.
+
+**Step 6:** If required, combine the consumption values of matching facilities.
+
+**Step 7:** Recalculate total and average consumption.
+
+**Step 8:** Display the merged dataset.
+
+**Output:** Combined facility records.
+
+## Algorithm: Resource Status Classification
+
+For each facility:
+
+**Step 1:** Calculate total consumption.
+
+**Step 2:** Compare consumption with the permitted limit.
+
+**Step 3:**
+
+If consumption <= 80% of the permitted limit:
+
+→ NORMAL
+
+If consumption > 80% and consumption <= permitted limit:
+
+→ HIGH
+
+If consumption > permitted limit:
+
+→ EXCESSIVE
+
+**Step 4:** Generate an appropriate recommendation.
+
+**Step 5:** Store the status in the facility structure.
